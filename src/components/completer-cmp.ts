@@ -31,7 +31,7 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
                 [overrideSuggested]="overrideSuggested" [openOnFocus]="openOnFocus" [fillHighlighted]="fillHighlighted" 
                 [openOnClick]="openOnClick" [selectOnClick]="selectOnClick"
                 (blur)="onBlur()" (focus)="onFocus()" (keyup)="onKeyup($event)" (keydown)="onKeydown($event)" (click)="onClick($event)"
-                autocomplete="off" autocorrect="off" autocapitalize="off" />
+                autocomplete="off" autocorrect="off" autocapitalize="off" style="width: 100%;" />
 
             <div class="completer-dropdown-holder"
                 *ctrList="dataService;

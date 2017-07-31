@@ -1,6 +1,6 @@
 {
   "name": "ag2-completer",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "ag2 autocomplete/typeahead component",
   "main": "bundles/ag2-completer.js",
   "scripts": {
