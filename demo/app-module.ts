@@ -10,7 +10,7 @@ import { AppComponent } from "./app-cmp";
 import { MaterialCmp } from "./material-cmp";
 import { NativeCmp } from "./native-cmp";
 import { routing } from "./app.routing";
-import { Ng2CompleterModule } from "../src";
+import { Ag2CompleterModule } from "../src";
 import { CompleterCmpMd } from "./completer-cmp-md";
 
 
@@ -18,7 +18,7 @@ import { CompleterCmpMd } from "./completer-cmp-md";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    Ng2CompleterModule,
+    Ag2CompleterModule,
     MdInputModule,
     MdListModule,
     FormsModule,

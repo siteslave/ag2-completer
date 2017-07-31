@@ -21,10 +21,10 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
 
 
 @Component({
-    selector: "ng2-completer",
+    selector: "ag2-completer",
     template: `
         <div class="completer-holder" ctrCompleter>
-            <input #ctrInput [attr.id]="inputId.length > 0 ? inputId : null" type="search" class="completer-input" ctrInput [ngClass]="inputClass"
+            <input #ctrInput [attr.id]="inputId.length > 0 ? inputId : null" type="text" class="completer-input" ctrInput [ngClass]="inputClass"
                 [(ngModel)]="searchStr" (ngModelChange)="onChange($event)" [attr.name]="inputName" [placeholder]="placeholder"
                 [attr.maxlength]="maxChars" [tabindex]="fieldTabindex" [disabled]="disableInput"
                 [clearSelected]="clearSelected" [clearUnselected]="clearUnselected"
@@ -72,7 +72,7 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
         border-width: 1px;
         border-style: solid;
         border-radius: 2px;
-        width: 250px;
+        width: 300px;
         padding: 6px;
         cursor: pointer;
         z-index: 9999;
@@ -91,8 +91,8 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
     }
 
     .completer-selected-row {
-        background-color: lightblue;
-        color: #ffffff;
+        background-color: #D9E4EA;
+        color: #000000;
     }
 
     .completer-description {
@@ -102,7 +102,6 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
     .completer-image-default {
         width: 16px;
         height: 16px;
-        background-image: url("demo/res/img/default.png");
     }
 
     .completer-image-holder {

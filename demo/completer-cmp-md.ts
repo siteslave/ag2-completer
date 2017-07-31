@@ -19,7 +19,7 @@ const COMPLETER_CONTROL_VALUE_ACCESSOR = {
 
 
 @Component({
-    selector: "ng2-completer-md",
+    selector: "ag2-completer-md",
     templateUrl: "./completer-cmp-md.html",
     styleUrls: ["./completer-cmp-md.css"],
     providers: [COMPLETER_CONTROL_VALUE_ACCESSOR]

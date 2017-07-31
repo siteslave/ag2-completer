@@ -1,8 +1,8 @@
 {
-  "name": "ng2-completer",
-  "version": "1.6.0",
-  "description": "ng2 autocomplete/typeahead component",
-  "main": "bundles/ng2-completer.js",
+  "name": "ag2-completer",
+  "version": "0.0.3",
+  "description": "ag2 autocomplete/typeahead component",
+  "main": "bundles/ag2-completer.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "clean": "cross-env ./node_modules/.bin/del  .tmp bundles dist \"src/**/*.+(js|d.ts|js.map)\" \"demo/**/*.+(js|js.map)\" && mkdir -p dist",
@@ -23,7 +23,8 @@
     "autcomplete",
     "typeahead",
     "word completion",
-    "ng2"
+    "ng2",
+    "ag2"
   ],
   "author": "Ofer Herman <oferhe@gmail.com>",
   "contributors": [

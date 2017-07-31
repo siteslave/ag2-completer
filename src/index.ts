@@ -1,4 +1,4 @@
-export {Ng2CompleterModule} from "./ng2-completer.module";
+export {Ag2CompleterModule} from "./ag2-completer.module";
 
 export {CompleterCmp} from "./components/completer-cmp";
 export {CompleterListItemCmp} from "./components/completer-list-item-cmp";

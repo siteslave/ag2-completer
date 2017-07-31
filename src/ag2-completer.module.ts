@@ -42,4 +42,4 @@ import { CommonModule } from "@angular/common";
         RemoteDataFactoryProvider
     ]
 })
-export class Ng2CompleterModule { }
+export class Ag2CompleterModule { }
