@@ -1,33 +1,33 @@
-# ng2-completer
+# ag2-completer
 
 Auto complete component for Angular 2.
 
 This component is based on [angucomplete-alt](https://github.com/ghiden/angucomplete-alt)
 
-Click for [demo](http://oferh.github.io/ng2-completer/) or [plunk](https://plnkr.co/edit/sVnfpBiEb5jBdtul4ls9?p=preview)
+Click for [demo](http://oferh.github.io/ag2-completer/) or [plunk](https://plnkr.co/edit/sVnfpBiEb5jBdtul4ls9?p=preview)
 
 ## Installation
 
 ```sh
-npm install ng2-completer --save
+npm install ag2-completer --save
 ```
 
 ## Usage
 
-The module you want to use ng2-completer in must import `Ng2CompleterModule` and `FormsModule` (to use the ngModel
-directive on ng2-completer).  `Ng2CompleterModule` provides the `CompleterService`, and declares the `ng2-completer`
+The module you want to use ag2-completer in must import `ag2CompleterModule` and `FormsModule` (to use the ngModel
+directive on ag2-completer).  `ag2CompleterModule` provides the `CompleterService`, and declares the `ag2-completer`
 directive.
 ```ts
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from "@angular/forms";
 import { AppComponent } from './app.component';
-import { Ng2CompleterModule } from "ng2-completer";
+import { Ag2CompleterModule } from "ag2-completer";
 
 @NgModule({
   imports: [
       BrowserModule,
-      Ng2CompleterModule,
+      Ag2CompleterModule,
       FormsModule,
   ],
   declarations: [ AppComponent ],
@@ -36,18 +36,18 @@ import { Ng2CompleterModule } from "ng2-completer";
 export class AppModule { }
 ```
 
-Add ng2-completer to your component and create a data source:
+Add ag2-completer to your component and create a data source:
 
 ```ts
 import { Component } from '@angular/core';
-import { CompleterService, CompleterData } from 'ng2-completer';
+import { CompleterService, CompleterData } from 'ag2-completer';
 
 @Component({
   selector: 'my-component',
   template: `<h1>Search color</h1>
-            <ng2-completer [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ng2-completer>
+            <ag2-completer [(ngModel)]="searchStr" [datasource]="dataService" [minSearchLength]="0"></ag2-completer>
             <h1>Search captain</h1>
-            <ng2-completer [(ngModel)]="captain" [datasource]="captains" [minSearchLength]="0"></ng2-completer>`
+            <ag2-completer [(ngModel)]="captain" [datasource]="captains" [minSearchLength]="0"></ag2-completer>`
 })
 export class MyComponent {
 
@@ -71,7 +71,7 @@ export class MyComponent {
 }
 ```
 
-ng2-completer uses [rxjs](https://github.com/Reactive-Extensions/RxJS) stream as data sources.
+ag2-completer uses [rxjs](https://github.com/Reactive-Extensions/RxJS) stream as data sources.
 There are 2 ready made data sources that can be used to fetch local and remote data but it's also possible to provide
 a custom source that generates a stream of items.
 
@@ -81,7 +81,7 @@ Add the following to `System.js` map configuration:
 ```ts
    var map = {
        ...
-       'ng2-completer': 'node_modules/ng2-completer/ng2-completer.umd.js'
+       'ag2-completer': 'node_modules/ag2-completer/ag2-completer.umd.js'
    }
 ```
 
@@ -89,7 +89,7 @@ Add the following to `System.js` map configuration:
 
 ## API
 
-### ng2-completer component
+### ag2-completer component
 
 |Attribute|Description|Type|Required|Default|
 |:---    |:---        |:--- |:---      |:--- |
@@ -120,7 +120,7 @@ Add the following to `System.js` map configuration:
 |textSearching|Text displayed while search is active. if the string is falsy it won't be displayed|string|No|Searching...|
 |autoHighlight|Automatically highlight the best matching search result when the input changes. the "best match" is selected by: exact match, starts with and finally includes|boolean|No|false|
 
-### ng2-completer events
+### ag2-completer events
 
 |Name|Description|Type|
 |:---    |:---        |:--- |
@@ -132,7 +132,7 @@ Add the following to `System.js` map configuration:
 |keyup|emitted when the input emits keyup|(event: any): void|
 |keydown|emitted when the input emits keydown|(event: any): void|
 
-### ng2-completer methods
+### ag2-completer methods
 
 |Method|Description|Parameters|
 |:---    |:---        |:--- |
